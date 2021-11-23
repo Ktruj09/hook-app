@@ -4,10 +4,14 @@ import ReactDOM from 'react-dom';
 //import CounterApp from './components/01-useState/CounteraApp'
 import CounterCustomHook from './components/01-useState/CounterCustomHook';
 
-import SimpleForm from './components/02-useEffect/SimpleForm'
+//import SimpleForm from './components/02-useEffect/SimpleForm'
+
+//import FormWithCustomHook from './components/02-useEffect/FormWithCustomHook'
+
+import MultipleCustomHooks from './components/03-examples/MultipleCustomHooks'
 
 ReactDOM.render(
-  <SimpleForm/>,
+  <MultipleCustomHooks/>,
   document.getElementById('root')
 );
 

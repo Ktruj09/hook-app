@@ -3,12 +3,12 @@ import { useState } from "react"
 export const useCounter = (initialState =0) =>{
 
     //creamos un estado 
-    const [state, setState] =useState(initialState);
+    const [counter, SetCounter] =useState(initialState);
 
     //creación de dos funciones
     //incremente
     const increment= () =>{
-        setState(state +1);
+        SetCounter(counter +1);
     }
 
     const decrement= () =>{
@@ -36,7 +36,7 @@ export const useCounter = (initialState =0) =>{
     }
     
     return {
-        state,
+        counter,
         increment,
         decrement,
         message, 

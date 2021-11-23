@@ -7,3 +7,12 @@ body{
 .form-group{
     padding: 10px;
 }
+
+.blockquote-footer{
+    margin-top: 1px;
+}
+
+
+.spinner-border{
+    margin-bottom: 20px;
+}

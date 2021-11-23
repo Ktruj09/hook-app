@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./simpleform.css";
+
+import Message from './Message'
 const SimpleForm = () => {
   const [formState, setFormState] = useState({
     name: "",
@@ -11,17 +13,17 @@ const SimpleForm = () => {
   const { name, email } = formState;
 
   useEffect(() => {
-    console.log("Hey!");
+    //console.log("Hey!");
   }, []);
 
   //cada vez que se haga un cambio, es importante añadir otro useEffect
   useEffect(() => {
-    console.log("FormState cambió!");
+   // console.log("FormState cambió!");
   }, [formState]);
 
   //ejemplo cuando queremos que solo uno cambie
   useEffect(() => {
-    console.log("Email cambió!");
+    //console.log("Email cambió!");
   }, [email]);
 
   const handleInputChange = ({ target }) => {
@@ -60,6 +62,9 @@ const SimpleForm = () => {
           onChange={handleInputChange}
         />
       </div>
+
+{/** Si el nombre es igual a Kevin, aparecerá el mensaje  */}
+      {(name === 'Kevin') && <Message/>}
     </>
   );
 }; //end funtion SimpleForm
