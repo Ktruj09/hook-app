@@ -10,10 +10,14 @@ import CounterCustomHook from './components/01-useState/CounterCustomHook';
 //import FocusScreen from './components/04-useRef/FocusScreen'
 //import RealExampleRef from './components/04-useRef/RealExampleRef'
 //import Layout from './components/05-UseLayoutEffect/Layout'
+//import Memorize from './components/06-Memos/Memorize'
+//import MemoHooks from './components/06-Memos/MemoHook'
+import CallbackHook from './components/06-Memos/CallbackHook';
 
-import Memorize from './components/06-Memos/Memorize'
+
+
 ReactDOM.render(
-  <Memorize/>,
+  <CallbackHook/>,
   document.getElementById('root')
 );
 
