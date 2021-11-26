@@ -4,6 +4,11 @@ import React, {useState} from 'react'
 const useForm = (initialState ={}) =>{
    const [values, setValues] = useState(initialState);
 
+   //función que nos ayuda para resetear formulario.
+   //importante retornar el tercer argumento
+   const reset = () =>{
+      setValues(initialState)
+   }
 
    const handleInputChange = ({target}) =>{
          //establecemos el objeto
@@ -15,6 +20,6 @@ const useForm = (initialState ={}) =>{
 
    //primer valor sería retornar los valores ingresados por el form
    //segundo hacemos llamado al handeInputchange 
-   return [values, handleInputChange];
+   return [values, handleInputChange, reset];
 }
 export default useForm;
