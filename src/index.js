@@ -13,11 +13,13 @@ import ReactDOM from 'react-dom';
 //import Memorize from './components/06-Memos/Memorize'
 //import MemoHooks from './components/06-Memos/MemoHook'
 //import CallbackHook from './components/06-Memos/CallbackHook';
-import TodoApp from './components/07-useReduce/TodoApp'
+//import TodoApp from './components/07-useReduce/TodoApp'
+
+import MainApp from './components/08-UseContext/MainApp'
 
 
 ReactDOM.render(
-  <TodoApp/>,
+  <MainApp/>,
   document.getElementById('root')
 );
 
